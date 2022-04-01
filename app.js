@@ -2,6 +2,9 @@
 const inquirer = require("inquirer");
 // get the template data from the template.js file
 const templateData = require('./src/template')
+// add a README.md file and add the data that we got back from the template.js to it.
+const addFileToReadme = require('./src/files')
+console.log('readme is',templateData);
 
 
 // start prompting the user
@@ -137,4 +140,7 @@ promptUser()
 .then(data => {
   console.log(data);
   return templateData(data);
+}).then(WriteFileResponse => {
+  return addFileToReadme(WriteFileResponse)
+  // console.log(writeFile);
 })
