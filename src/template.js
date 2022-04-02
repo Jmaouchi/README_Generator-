@@ -8,23 +8,29 @@ const printRequiredData = dataset => {
   return `
   # Title: ${title}
 
+
   # About The Application:
     ${about}
+
 
   # Built With:
     ${languages.join(', ')}
     
+
   # Instalation process:
     ${header.instal} 
 
+    
   # Usage Of The Application:
     ${header.usage}
   
+
   ${readAboutLicense(header.license)}
 
-  # Live Link To The Application:  
-    https://${header.GitHub}.github.io/${header.link}/
+
+  # Live Link To The Application:  https://${header.GitHub}.github.io/${header.link}/
         
+
   # Contribution:
     ${header.contribution}
 `}
@@ -38,6 +44,7 @@ if(!licenseName){
   # license used: 
    ${licenseName}
 
+   
   ### Read about ${licenseName} license here:  https://choosealicense.com/licenses/`
 }
 
