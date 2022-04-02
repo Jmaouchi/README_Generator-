@@ -1,22 +1,28 @@
 
-    # asd
+    # Title: Readme Generator
 
-    # About The Application
-    asd
+    # About The Application:
+    This application will allow you to create a README,md file.
 
-    # Built With
-    HTML, CSS, JavaScript, JQuery, Bootstrap
+    # Built With:
+    JavaScript
     
-    # Instalation process
-    asd 
+    # Instalation process:
+    To instal this application, you need to follow this steps: 
 
-    # Usage Of The Application
-    as
+    # Usage Of The Application:
+    Creating s readme file
      
-    # Live Link To The Application  
-    https://sada.github.io/sd/
+
+    # license used: 
+    MIT
+
+    ### Read about MIT here:  https://choosealicense.com/licenses/ 
+
+    # Live Link To The Application:  
+    https://Jmaouchi.github.io/df/
     
     
-    # Contribution
-    ads
+    # Contribution:
+    Built by Jugurta Maouchi 
     
