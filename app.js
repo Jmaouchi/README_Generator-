@@ -3,7 +3,7 @@ const inquirer = require("inquirer")
 // get the template data from the template.js file
 const templateData = require('./src/template')
 // add a README.md file and add the data that we got back from the template.js to it.
-const addFileToReadme = require('./src/files')
+const addFileToReadme = require('./src/readme')
 console.log('readme is',templateData);
 
 
@@ -77,18 +77,18 @@ const promptUserWithQuestions = () =>{
       }
     },
     {
-      type: 'list',
+      type: 'input',
       name: 'license',
       message: 'What license you used on this application? (Required)',
-      choices: ['MIT', 'ISC','GNU','copyright','copyleft','NaN'],
-      validate: nameInput => {
-        if (nameInput) {
-          return true;
-        } else {
-          console.log('Please enter the license used!');
-          return false;
-        }
-      }
+      // choices: ['MIT', 'ISC','GNU','copyright','copyleft','NaN'],
+      // validate: nameInput => {
+      //   if (nameInput) {
+      //     return true;
+      //   } else {
+      //     console.log('Please enter the license used!');
+      //     return false;
+      //   }
+      // }
     },
     {
       type: 'type',

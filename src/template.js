@@ -1,3 +1,17 @@
+const readAboutLicense = licenseName => {
+  if(!licenseName){
+    return ` `
+  }
+    return `
+   # license used: 
+   ${licenseName}
+
+   ### Read about ${licenseName} license here:  https://choosealicense.com/licenses/`
+  }
+
+
+
+
 module.exports = templateData => {
   //, we create the projects and about variables the same way we did before, but we're taking the rest of the data that hasn't 
   //  been destructured from templateData and storing it in a new object, called header
@@ -19,12 +33,10 @@ module.exports = templateData => {
 
     # Usage Of The Application:
     ${header.usage}
-     
+    
+    ${readAboutLicense(header.license)}
 
-    # license used: 
-    ${header.license}
 
-    ### Read about ${header.license} here:  https://choosealicense.com/licenses/ 
 
     # Live Link To The Application:  
     https://${header.GitHub}.github.io/${header.link}/
