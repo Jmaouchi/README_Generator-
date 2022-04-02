@@ -28,7 +28,7 @@ const printRequiredData = dataset => {
   ${readAboutLicense(header.license)}
 
 
-  # Live Link To The Application:  https://${header.GitHub}.github.io/${header.link}/
+  ## Live Link To The Application:  https://${header.GitHub}.github.io/${header.link}/
         
 
   # Contribution:
@@ -43,9 +43,9 @@ if(!licenseName){
   return `
   # license used: 
    ${licenseName}
+  ## Read about ${licenseName} license here:  https://choosealicense.com/licenses/`
 
-   
-  ### Read about ${licenseName} license here:  https://choosealicense.com/licenses/`
+  
 }
 
 // export the modlule 
