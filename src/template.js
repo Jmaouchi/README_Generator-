@@ -1,3 +1,6 @@
+// const licenseBadge = require('./license')
+const {mitBadge ,icsbadge ,agplbadge ,Albadge} = require('./license');
+
 // Set a function to create a templete and get the data placed wherever we want it to be at.
 const printRequiredData = dataset => {
   console.log('data set is', dataset);
@@ -6,6 +9,10 @@ const printRequiredData = dataset => {
     console.log(`data is: ${JSON.stringify(dataset)}\n`);
 
   return `
+
+  # License Badge: 
+  ${getBadge(header.license)}
+
   # Table Content
 
   * [Title](#title)
@@ -14,9 +21,8 @@ const printRequiredData = dataset => {
   * [Instalation](#header.instal)
   * [Usage](header.usage)
   * [License](#header.license)
-  * [Live-link](#link)
+  * [Link](#link)
   * [Contribution](#header.contribution)
-
 
 
   # Title: ${title}
@@ -24,25 +30,32 @@ const printRequiredData = dataset => {
 
   # About The Application:
     ${about}
-
+    
 
   # Built With:
     ${languages.join(', ')}
     
 
-  # Instalation process:
+  # Instalation:
     ${header.instal} 
 
     
-  # Usage Of The Application:
+  # Usage:
     ${header.usage}
   
 
   ${readAboutLicense(header.license)}
 
 
-  ## Live Link To The Application:  
-        
+  ## Link:  
+   
+  
+
+
+  # Contact:
+  ${header.Email}
+
+
 
   # Contribution:
     ${header.contribution}
@@ -53,17 +66,18 @@ const readAboutLicense = licenseName => {
   const MIT = 'MIT'
   const ISC = 'ISC'  
   const GPL = 'GPL'
-  const AGL =  'AGL'
   const AL = 'AL'
 
-  const licenses = [MIT, ISC, GPL, AGL, AL]
+  const licenses = [MIT, ISC, GPL, AL]
   for (let i = 0; i< licenses.length; i++){
     console.log('license length is ', licenses[0]); 
     if(!licenseName){
+      
     return ` `
   }else{
     // if the license is MIT then print this
     if(licenseName === MIT){
+
   return `
   # license used: 
   ## ${licenseName}
@@ -94,18 +108,6 @@ const readAboutLicense = licenseName => {
 
   `   
 
-    // if the license is AGL then print this
-    }else if(licenseName === AGL){
-    return `
-  # license used: 
-  
-  ## ${licenseName}
-
-
-  ## Read about ${licenseName} license here:  'https://choosealicense.com/licenses/agpl-3.0/'
-
-  `  
-  
     // if the license is AL then print this
     }else if(licenseName === AL){
     return `
@@ -122,6 +124,29 @@ const readAboutLicense = licenseName => {
 
   }
 } 
+}
+
+const getBadge = (corrects) => {
+  if(corrects){
+    if(corrects === 'MIT'){
+    return `
+    ${mitBadge}
+    `
+    }else if(corrects === 'ISC'){
+      return `
+      ${icsbadge}
+      `
+    }else if(corrects === 'GPL'){
+      return `
+      ${agplbadge}
+      `
+    }else if(corrects === 'AL'){
+      return `
+      ${Albadge}
+      `
+    }
+  
+  }
 }
 
 // export the modlule 

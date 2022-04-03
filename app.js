@@ -7,6 +7,7 @@ const addFileToReadme = require('./src/index')
 console.log('readme is',templateData);
 
 
+
 // start prompting the user
 const promptUserWithQuestions = () =>{
   return inquirer.prompt([
@@ -80,7 +81,7 @@ const promptUserWithQuestions = () =>{
       type: 'list',
       name: 'license',
       message: 'What license you used on this application? (Required)',
-      choices: ['MIT', 'ISC','GPL','AGL','AL','NaN'],
+      choices: ['MIT', 'ISC', 'AGL','AL'],
       validate: nameInput => {
         if (nameInput) {
           return true;
@@ -89,6 +90,11 @@ const promptUserWithQuestions = () =>{
           return false;
         }
       }
+    },
+    {
+      type: 'type',
+      name: 'Badge',
+      message: 'Do ypu whant to include a badge for this license? (Required)'
     },
     {
       type: 'type',
@@ -112,6 +118,19 @@ const promptUserWithQuestions = () =>{
           return true;
         } else {
           console.log('Please add a github link to this application!');
+          return false;
+        }
+      }
+    },
+    {
+      type: 'type',
+      name: 'Email',
+      message: 'What is your Email address? (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter your email address!');
           return false;
         }
       }
