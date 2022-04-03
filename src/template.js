@@ -28,24 +28,88 @@ const printRequiredData = dataset => {
   ${readAboutLicense(header.license)}
 
 
-  ## Live Link To The Application:  https://${header.GitHub}.github.io/${header.link}/
+  ## Live Link To The Application:  
         
 
   # Contribution:
     ${header.contribution}
 `}
 
-// Set a function that will hold a callback just in case a license is added from the user.
+// Set a function that will hold a callback just in case a license is added from the user, and add a link to see the license policy
 const readAboutLicense = licenseName => {
-if(!licenseName){
-  return ` `
-}
+  const MIT = 'MIT'
+  const ISC = 'ISC'  
+  const GPL = 'GPL'
+  const AGL =  'AGL'
+  const AL = 'AL'
+
+  const licenses = [MIT, ISC, GPL, AGL, AL]
+  for (let i = 0; i< licenses.length; i++){
+    console.log('license length is ', licenses[0]); 
+    if(!licenseName){
+    return ` `
+  }else{
+    // if the license is MIT then print this
+    if(licenseName === MIT){
   return `
   # license used: 
-   ${licenseName}
-  ## Read about ${licenseName} license here:  https://choosealicense.com/licenses/`
+  ## ${licenseName}
 
+  ## Read about ${licenseName} license here: 'https://choosealicense.com/licenses/mit/'
   
+  `  
+
+    // if the license is ISC then print this
+    }else if(licenseName === ISC){
+  return `
+  # license used: 
+  
+  ## ${licenseName}
+
+
+  ## Read about ${licenseName} license here:  'https://choosealicense.com/licenses/ISC/'
+  `  
+  
+    // if the license is GPL then print this
+    }else if(licenseName === GPL){
+    return `
+  # license used: 
+  
+  ## ${licenseName}
+
+
+  ## Read about ${licenseName} license here:  'https://choosealicense.com/licenses/gpl-3.0/'
+
+  `   
+
+    // if the license is AGL then print this
+    }else if(licenseName === AGL){
+    return `
+  # license used: 
+  
+  ## ${licenseName}
+
+
+  ## Read about ${licenseName} license here:  'https://choosealicense.com/licenses/agpl-3.0/'
+
+  `  
+  
+    // if the license is AL then print this
+    }else if(licenseName === AL){
+    return `
+  # license used: 
+  
+  ## ${licenseName}
+
+
+  ## Read about ${licenseName} license here:  'https://choosealicense.com/licenses/apache-2.0/'
+  
+  `   
+
+  }
+
+  }
+} 
 }
 
 // export the modlule 

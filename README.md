@@ -1,32 +1,34 @@
 
-  # Title: Readme_Generator
+  # Title: Readme_Generator 
 
 
   # About The Application:
-    Application will help you create a README.md file in less time with less code 
+    Application that will help you create a Readme file in less time and less code
 
 
   # Built With:
-    JavaScript
+    
+    
+
+  # Instalation process:
+    To instal this application you need to have node.js instaled in your local machin, then you need to clone this code, and do a npm init and npm inquirer instal to get the inquirer package we used on this app, this will allow you to get the promp method to work'  
 
     
-  # Instalation process:
-    To instal this application you need to have node.js instaled in your local machin, then you need to clone this code, and do a npm init and npm inquirer instal to get the inquirer package we used on this app, this will allow you to get the promp method to work' 
-
-
   # Usage Of The Application:
-    N/A
+    Can create a readme file whenever you want to whatever app you want, readme file will have all the descriptions that you need
   
+
   
   # license used: 
-   MIT
+  ## MIT
+
+  ## Read about MIT license here: 'https://choosealicense.com/licenses/mit/'
+  
+  
 
 
-  ## Read about MIT license here:  https://choosealicense.com/licenses/
-
-
-  ## Live Link To The Application:  https://Jmaouchi.github.io/N/A/
-
+  ## Live Link To The Application:  https://Jmaouchi.github.io/https://github.com/Jmaouchi/README_Generator-/tree/main/
+        
 
   # Contribution:
-  Built By Jugurta Maouchi
+    By Jugurta maouchi 
