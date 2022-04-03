@@ -8,10 +8,10 @@ const printRequiredData = dataset => {
   return `
   # Table Content
 
-  * [title](#title)
-  * [about](#about)
-  * [langueges](#languages)
-  * [instalation](#header.instal)
+  * [Title](#title)
+  * [About](#about)
+  * [Built](#languages)
+  * [Instalation](#header.instal)
   * [Usage](header.usage)
   * [License](#header.license)
   * [Live-link](#link)
