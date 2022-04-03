@@ -6,6 +6,19 @@ const printRequiredData = dataset => {
     console.log(`data is: ${JSON.stringify(dataset)}\n`);
 
   return `
+  # Table Content
+
+  * [title](#title)
+  * [about](#about)
+  * [langueges](#languages)
+  * [instalation](#header.instal)
+  * [Usage](header.usage)
+  * [License](#header.license)
+  * [Live-link](#link)
+  * [Contribution](#header.contribution)
+
+
+
   # Title: ${title}
 
 
@@ -62,9 +75,8 @@ const readAboutLicense = licenseName => {
     // if the license is ISC then print this
     }else if(licenseName === ISC){
   return `
-  # license used: 
-  
-  ## ${licenseName}
+  # license used:  ${licenseName}
+
 
 
   ## Read about ${licenseName} license here:  'https://choosealicense.com/licenses/ISC/'
