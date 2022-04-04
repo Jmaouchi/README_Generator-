@@ -1,23 +1,23 @@
 // require the inquirer package to use the prompt 
-const inquirer = require("inquirer");
+const inquirer = require("inquirer")
 // get the template data from the template.js file
 const templateData = require('./src/template')
 // add a README.md file and add the data that we got back from the template.js to it.
-const addFileToReadme = require('./src/files')
+const addFileToReadme = require('./src/index')
 console.log('readme is',templateData);
 
 // start prompting the user
-const promptUser = () =>{
+const promptUserWithQuestions = () =>{
   return inquirer.prompt([
     {
       type: 'input',
-      name: 'name',
-      message: 'What the title of your feature? (Required)',
+      name: 'title',
+      message: 'What is the title of your application? (Required)',
       validate: nameInput => {
         if (nameInput) {
           return true;
         } else {
-          console.log('Please enter your name!');
+          console.log('Please insert the title!');
           return false;
         }
       }
@@ -25,7 +25,7 @@ const promptUser = () =>{
     {
       type: 'input',
       name: 'about',
-      message: 'Please add a Description of this feature? (Required)',
+      message: 'what is the description of this application? (Required)',
       validate: nameInput => {
         if (nameInput) {
           return true;
@@ -38,13 +38,13 @@ const promptUser = () =>{
     {
       type: 'checkbox',
       name: 'languages',
-      message: 'What languages you used to build this feature? (Required)',
-      choices:['HTML','CSS','JavaScript','JQuery','Bootstrap'],
+      message: 'What languages you used to build this application? (Required)',
+      choices:['HTML','CSS','JavaScript','JQuery','Bootstrap', 'Node.js'],
       validate: nameInput => {
         if (nameInput) {
           return true;
         } else {
-          console.log('Please enter all languages used for building this application!');
+          console.log('Please enter all the languages that been used to build this application!');
           return false;
         }
       }
@@ -57,7 +57,7 @@ const promptUser = () =>{
         if (nameInput) {
           return true;
         } else {
-          console.log('Please provide infos on how to instal this application!');
+          console.log('Please provide informations on how to instal this application!');
           return false;
         }
       }
@@ -78,21 +78,13 @@ const promptUser = () =>{
     {
       type: 'list',
       name: 'license',
-      message: 'What license you used on this application? (Required)',
-      choices: ['MIT', 'ISC','GNU','copyright','copyleft','NaN'],
-      validate: nameInput => {
-        if (nameInput) {
-          return true;
-        } else {
-          console.log('Please enter the license used!');
-          return false;
-        }
-      }
+      message: 'What license that is used for this application? (Required)',
+      choices: ['MIT', 'ISC', 'AGL','AL', 'N/A'],
     },
     {
       type: 'type',
       name: 'GitHub',
-      message: 'What is your name on GitHub? (Required)',
+      message: 'What is your GitHub name? (Required)',
       validate: nameInput => {
         if (nameInput) {
           return true;
@@ -117,6 +109,19 @@ const promptUser = () =>{
     },
     {
       type: 'type',
+      name: 'Email',
+      message: 'What is your Email address? (Required)',
+      validate: nameInput => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log('Please enter your email address!');
+          return false;
+        }
+      }
+    },
+    {
+      type: 'type',
       name: 'contribution',
       message: 'Add a contribution to this application! (Required)',
       validate: nameInput => {
@@ -135,4 +140,11 @@ const promptUser = () =>{
 
 
 // callback functions to get the data back
-promptUser()
+promptUserWithQuestions()
+.then(data => {
+  console.log(data);
+  return templateData(data);
+}).then(WriteFileResponse => {
+  return addFileToReadme(WriteFileResponse)
+  // console.log(writeFile);
+})
