@@ -133,28 +133,34 @@ const readAboutLicense = licenseName => {
 
 // function that will allow the user to get the license badge
 const getBadge = (userLicenseUsed) => {
+  // If a user choose a license then check which license he choose
   if(userLicenseUsed){
+    // If a user choose the MIT license then print the name and the badge of the MIT license 
     if(userLicenseUsed === 'MIT'){
     return `
   # License Badge: 
     ${mitBadge}
     `
+    // If a user choose the ISC license then print the name and the badge of the ISC license 
     }else if(userLicenseUsed === 'ISC'){
       return `
   # License Badge: 
       ${icsbadge}
     `
+    // If a user choose the AGL license then print the name and the badge of the AGL license 
     }else if(userLicenseUsed === 'AGL'){
       console.log(agplbadge);
       return `
   # License Badge: 
       ${agplbadge}
     `
+    // If a user choose the AL license then print the name and the badge of the AL license 
     }else if(userLicenseUsed === 'AL'){
       return `
   # License Badge: 
       ${Albadge}
     `
+    // If a user did not choose license then dont print anything 
     }else if(userLicenseUsed === 'N/A'){
       return `
       `
