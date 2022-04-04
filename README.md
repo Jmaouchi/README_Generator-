@@ -20,18 +20,22 @@
 
 
   # About The Application:
+
     dasd
     
 
   # Built With:
+
     HTML, CSS, JavaScript, JQuery, Bootstrap, Node.js
     
 
   # Instalation:
+
     asd 
 
     
   # Usage:
+
     ads
   
 
@@ -42,9 +46,11 @@
 
 
   # Contact:
+
   asd
 
 
 
   # Contribution:
+  
     asd
