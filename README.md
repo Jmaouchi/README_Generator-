@@ -48,7 +48,7 @@ SOFTWARE.
 
 
   # About The Application:
-    This application will allow you to create a README.md file, in less time and less code 
+    This application will allow you to create a README.md file, with only answering to a prompt quastions
     
 
   # Built With:
@@ -56,11 +56,11 @@ SOFTWARE.
     
 
   # Instalation:
-    To instal this application, you need to instal node.js and then,  you need to clone the repo to your local machine, then open repo with command line, you need to do npm init and npm instal inquirer inside your terminal. after that you need to do node app.js and start answering to the prompt quastions... done. 
+    To instal this application, you need to instal node.js and then,  you need to clone the repo to your local machine, then open repo with command line, you need to do npm init and npm instal inquirer inside your terminal. after that you need to do node app.js and start answering to the prompt quastions... done.  
 
     
   # Usage:
-    The main usage is to create your readme file, without missing any steps or informations 
+    The main usage is to create your readme file, without missing any steps or informations. 
   
 
 
@@ -75,4 +75,4 @@ SOFTWARE.
 
 
   # Contribution:
-    Built By Jugurta Maouchi
+    Built by Jugurta Maouchi   ©️2022 Readme_Generator, Inc

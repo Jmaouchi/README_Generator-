@@ -142,9 +142,10 @@ const promptUserWithQuestions = () =>{
 // callback functions to get the data back
 promptUserWithQuestions()
 .then(data => {
+  // Check what data we got back and call the templateData function 
   console.log(data);
   return templateData(data);
+  // Take that data from the templateData function and write a README.md file with calling the AddFileToReadme function
 }).then(WriteFileResponse => {
   return addFileToReadme(WriteFileResponse)
-  // console.log(writeFile);
 })
