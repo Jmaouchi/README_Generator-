@@ -7,8 +7,13 @@ const printRequiredData = dataset => {
   //Destructured the data that we got back from the prompt
     const {title, about, languages, license, ...header} = dataset; 
     console.log(`data is: ${JSON.stringify(dataset)}\n`);
-  return `${readAboutLicense(license)}
+  return `
+  # Title: ${title}
+  
+  
+  ${readAboutLicense(license)}
 
+  
   ${getBadge(license)}
 
   # Table of  Contents
@@ -22,8 +27,6 @@ const printRequiredData = dataset => {
   * [Link](#link)
   * [Contribution](#header.contribution)
 
-
-  # Title: ${title}
 
 
   # About The Application:
@@ -44,7 +47,7 @@ const printRequiredData = dataset => {
 
 
   ## Link:  
-   
+   ${header.link}
   
 
 
@@ -79,8 +82,8 @@ const readAboutLicense = licenseName => {
       if(licenseName === MIT){
 
   return `
-  # license used: 
-  ## ${licenseName}
+  # license used:  ${licenseName}
+
 
 
   ## Read about ${licenseName} license here: 'https://choosealicense.com/licenses/mit/'

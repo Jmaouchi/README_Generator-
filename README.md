@@ -1,12 +1,17 @@
 
-  # license used: 
-  ## MIT
+  # Title: Readme_Generator
+  
+  
+  
+  # license used:  MIT
+
 
 
   ## Read about MIT license here: 'https://choosealicense.com/licenses/mit/'
   
   
 
+  
   
   # License Badge: 
     Copyright (c) 
@@ -41,8 +46,6 @@ SOFTWARE.
   * [Contribution](#header.contribution)
 
 
-  # Title: Readme_Generator
-
 
   # About The Application:
     This application will allow you to create a README.md file, in less time and less code 
@@ -53,16 +56,16 @@ SOFTWARE.
     
 
   # Instalation:
-    To instal this application, you need to instal node.js and then,  you need to clone it to your local machine, then do npm init and npm instal inquirer inside you terminal. after that you need to do node app.js and start answering to the prompt quastions... done. 
+    To instal this application, you need to instal node.js and then,  you need to clone it to your local machine, then do npm init and npm instal inquirer inside you terminal. after that you need to do node app.js and start answering to the prompt quastions... done.  
 
     
   # Usage:
-    The main usage it to create your readme file without missing any steps or infos
+    The main usage is to create your readme file, without missing any steps or infos
   
 
 
   ## Link:  
-   
+   https://github.com/Jmaouchi/README_Generator-/tree/main
   
 
 
