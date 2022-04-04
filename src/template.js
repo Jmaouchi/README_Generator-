@@ -1,19 +1,17 @@
-// const licenseBadge = require('./license')
+// require the data that we exported from the license.js file
 const {mitBadge ,icsbadge ,agplbadge ,Albadge} = require('./license');
 
 // Set a function to create a templete and get the data placed wherever we want it to be at.
 const printRequiredData = dataset => {
   console.log('data set is', dataset);
   //Destructured the data that we got back from the prompt
-    const {title, about, languages, ...header} = dataset; 
+    const {title, about, languages, license, ...header} = dataset; 
     console.log(`data is: ${JSON.stringify(dataset)}\n`);
+  return `${readAboutLicense(license)}
 
-  return `
+  ${getBadge(license)}
 
-  # License Badge: 
-  ${getBadge(header.license)}
-
-  # Table Content
+  # Table of  Contents
 
   * [Title](#title)
   * [About](#about)
@@ -44,8 +42,6 @@ const printRequiredData = dataset => {
     ${header.usage}
   
 
-  ${readAboutLicense(header.license)}
-
 
   ## Link:  
    
@@ -67,20 +63,25 @@ const readAboutLicense = licenseName => {
   const ISC = 'ISC'  
   const GPL = 'GPL'
   const AL = 'AL'
+  const noLicense = 'N/A'
 
-  const licenses = [MIT, ISC, GPL, AL]
+  const licenses = [MIT, ISC, GPL, AL, noLicense]
   for (let i = 0; i< licenses.length; i++){
-    console.log('license length is ', licenses[0]); 
-    if(!licenseName){
-      
+    console.log('license length is ', licenses[i]); 
+
+    // if there is no license added from the user, return an empty string
+    if(!licenseName){  
     return ` `
-  }else{
-    // if the license is MIT then print this
-    if(licenseName === MIT){
+
+     // if a license is added from the user, return data
+    }else{
+      // if the license is MIT then print this
+      if(licenseName === MIT){
 
   return `
   # license used: 
   ## ${licenseName}
+
 
   ## Read about ${licenseName} license here: 'https://choosealicense.com/licenses/mit/'
   
@@ -120,29 +121,42 @@ const readAboutLicense = licenseName => {
   
   `   
 
+  }else if(licenseName === noLicense){
+    return `  
+  `   
   }
 
   }
 } 
 }
 
-const getBadge = (corrects) => {
-  if(corrects){
-    if(corrects === 'MIT'){
+
+// function that will allow the user to get the license badge
+const getBadge = (userLicenseUsed) => {
+  if(userLicenseUsed){
+    if(userLicenseUsed === 'MIT'){
     return `
+  # License Badge: 
     ${mitBadge}
     `
-    }else if(corrects === 'ISC'){
+    }else if(userLicenseUsed === 'ISC'){
       return `
+  # License Badge: 
       ${icsbadge}
-      `
-    }else if(corrects === 'GPL'){
+    `
+    }else if(userLicenseUsed === 'AGL'){
+      console.log(agplbadge);
       return `
+  # License Badge: 
       ${agplbadge}
-      `
-    }else if(corrects === 'AL'){
+    `
+    }else if(userLicenseUsed === 'AL'){
       return `
+  # License Badge: 
       ${Albadge}
+    `
+    }else if(userLicenseUsed === 'N/A'){
+      return `
       `
     }
   

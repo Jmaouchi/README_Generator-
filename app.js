@@ -6,8 +6,6 @@ const templateData = require('./src/template')
 const addFileToReadme = require('./src/index')
 console.log('readme is',templateData);
 
-
-
 // start prompting the user
 const promptUserWithQuestions = () =>{
   return inquirer.prompt([
@@ -19,7 +17,7 @@ const promptUserWithQuestions = () =>{
         if (nameInput) {
           return true;
         } else {
-          console.log('Please enter your name!');
+          console.log('Please insert the title!');
           return false;
         }
       }
@@ -41,7 +39,7 @@ const promptUserWithQuestions = () =>{
       type: 'checkbox',
       name: 'languages',
       message: 'What languages you used to build this application? (Required)',
-      choices:['HTML','CSS','JavaScript','JQuery','Bootstrap'],
+      choices:['HTML','CSS','JavaScript','JQuery','Bootstrap', 'Node.js'],
       validate: nameInput => {
         if (nameInput) {
           return true;
@@ -80,21 +78,8 @@ const promptUserWithQuestions = () =>{
     {
       type: 'list',
       name: 'license',
-      message: 'What license you used on this application? (Required)',
-      choices: ['MIT', 'ISC', 'AGL','AL'],
-      validate: nameInput => {
-        if (nameInput) {
-          return true;
-        } else {
-          console.log('Please enter the license used!');
-          return false;
-        }
-      }
-    },
-    {
-      type: 'type',
-      name: 'Badge',
-      message: 'Do ypu whant to include a badge for this license? (Required)'
+      message: 'What license that is used for this application? (Required)',
+      choices: ['MIT', 'ISC', 'AGL','AL', 'N/A'],
     },
     {
       type: 'type',
