@@ -29,7 +29,7 @@ SOFTWARE.
 
 
 
-  # Title: sad
+  # Title: Readme_Generator
 
 
 
@@ -47,15 +47,15 @@ SOFTWARE.
 
 
   # About The Application:
-    as
+    This application will allow you to create a README.md file, with only answering to a prompt quastions\
     
 
   # Built With:
-    HTML, CSS, JavaScript, JQuery, Bootstrap, Node.js
+    JavaScript, Node.js
     
 
   # Instalation:
-    sda 
+    To instal this application, you need to instal node.js and then,  you need to clone the repo to your local machine, then open repo with command line, you need to do npm init and npm instal inquirer inside your terminal. after that you need to do node app.js and start answering to the prompt quastions... done.     
 
   
   
@@ -68,19 +68,19 @@ SOFTWARE.
 
     
   # Usage:
-    sd
+    The main usage is to create your readme file, without missing any steps or informations. 
   
 
 
   ## Link:  
-   asd
+   https://github.com/Jmaouchi/README_Generator-/tree/main
   
 
 
   # Contact:
-  asd
+  djigo.maouchi@yahoo.com
 
 
 
   # Contribution:
-    asd
+    Built by Jugurta Maouchi   ©️2022 Readme_Generator, Inc
