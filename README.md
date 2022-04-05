@@ -29,7 +29,7 @@ SOFTWARE.
 
 
 
-  # Title: asd
+  # Title: sad
 
 
 
@@ -47,7 +47,7 @@ SOFTWARE.
 
 
   # About The Application:
-    asd
+    as
     
 
   # Built With:
@@ -55,28 +55,30 @@ SOFTWARE.
     
 
   # Instalation:
-    da 
+    sda 
 
   
   
   # Watch me do it!
-    ![](sample/test.gif)
+
+  ![](assets/images/test.gif)
+
 
 
 
     
   # Usage:
-    sda
+    sd
   
 
 
   ## Link:  
-   da
+   asd
   
 
 
   # Contact:
-  sd
+  asd
 
 
 
