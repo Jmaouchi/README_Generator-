@@ -12,7 +12,7 @@ const printRequiredData = dataset => {
   return `${getBadge(license)}
   
 
-  
+
 
   # Title: ${title}
 
@@ -63,12 +63,10 @@ const printRequiredData = dataset => {
 `}
 
 
-// function that will allow the user to get the license badge
+// A function that will allow the user to get the license and the license badge
 const getBadge = (userLicenseUsed) => {
-  // If a user choose a license then check which license he choose
-  if(userLicenseUsed){
 
-    // If a user choose the MIT license then print the name and the badge of the MIT license 
+    // If a user choose the MIT license then print the license name / the license badge / a link to that license 
     if(userLicenseUsed === 'MIT'){
     return `
   # license used:  ${userLicenseUsed}  [![License](https://img.shields.io/apm/l/npm)](https://choosealicense.com/licenses/mit/)
@@ -81,7 +79,7 @@ const getBadge = (userLicenseUsed) => {
 
     `
 
-    // If a user choose the ISC license then print the name and the badge of the ISC license 
+    // If a user choose the ISC license then print the license name / the license badge / a link to that license
     }else if(userLicenseUsed === 'ISC'){
       return `
   # license used:  ${userLicenseUsed}  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
@@ -90,7 +88,7 @@ const getBadge = (userLicenseUsed) => {
 
       ${icsbadge}
     `
-    // If a user choose the AGL license then print the name and the badge of the AGL license 
+    // If a user choose the AGL license then print the license name / the license badge / a link to that license 
     }else if(userLicenseUsed === 'GPL'){
       console.log(agplbadge);
       return `
@@ -101,7 +99,7 @@ const getBadge = (userLicenseUsed) => {
 
       ${agplbadge}
     `
-    // If a user choose the AL license then print the name and the badge of the AL license 
+    // If a user choose the AL license then print the license name / the license badge / a link to that license
     }else if(userLicenseUsed === 'AL'){
       return `
   # license used: Apache-2.0   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -118,7 +116,6 @@ const getBadge = (userLicenseUsed) => {
       `
     }
   
-  }
 }
 
 // export the modlule 

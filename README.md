@@ -27,7 +27,7 @@ SOFTWARE.
     
   
 
-  
+
 
   # Title: Readme_Generator
 
@@ -47,7 +47,7 @@ SOFTWARE.
 
 
   # About The Application:
-    This application will allow you to create a README.md file, with only answering to a prompt quastions
+    This application will allow you to create a README.md file, with only answering to a prompt quastions\
     
 
   # Built With:
@@ -55,7 +55,7 @@ SOFTWARE.
     
 
   # Instalation:
-    To instal this application, you need to instal node.js and then,  you need to clone the repo to your local machine, then open repo with command line, you need to do npm init and npm instal inquirer inside your terminal. after that you need to do node app.js and start answering to the prompt quastions... done.   
+    To instal this application, you need to instal node.js and then,  you need to clone the repo to your local machine, then open repo with command line, you need to do npm init and npm instal inquirer inside your terminal. after that you need to do node app.js and start answering to the prompt quastions... done.    
 
     
   # Usage:
