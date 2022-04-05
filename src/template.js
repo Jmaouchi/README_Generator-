@@ -45,7 +45,7 @@ const printRequiredData = dataset => {
   
   
   # Watch me do it!
-    ![](assets/sample.mp4)
+    ![](Sample/sample.mp4)
 
 
 
