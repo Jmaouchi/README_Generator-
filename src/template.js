@@ -7,14 +7,19 @@ const printRequiredData = dataset => {
   //Destructured the data that we got back from the prompt
     const {title, about, languages, license, ...header} = dataset; 
     console.log(`data is: ${JSON.stringify(dataset)}\n`);
-  return `
-  # Title: ${title}
+  
+  // return a template that will hold the data 
+  return `${getBadge(license)}
+  
   
   
   ${readAboutLicense(license)}
-
   
-  ${getBadge(license)}
+
+
+  # Title: ${title}
+
+
 
   # Table of  Contents
 
@@ -149,7 +154,9 @@ const getBadge = (userLicenseUsed) => {
     // If a user choose the ISC license then print the name and the badge of the ISC license 
     }else if(userLicenseUsed === 'ISC'){
       return `
-  # License Badge: 
+  # License Badge:
+  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC),
+  
       ${icsbadge}
     `
     // If a user choose the AGL license then print the name and the badge of the AGL license 
@@ -157,16 +164,21 @@ const getBadge = (userLicenseUsed) => {
       console.log(agplbadge);
       return `
   # License Badge: 
+  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+
       ${agplbadge}
     `
     // If a user choose the AL license then print the name and the badge of the AL license 
     }else if(userLicenseUsed === 'AL'){
       return `
-  # License Badge: 
+  # License Badge:
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0),
+  
       ${Albadge}
     `
     // If a user did not choose license then dont print anything 
     }else if(userLicenseUsed === 'N/A'){
+    
       return `
       `
     }
