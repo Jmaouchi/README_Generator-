@@ -42,6 +42,15 @@ const printRequiredData = dataset => {
   # Instalation:
     ${header.instal} 
 
+  
+  
+  # Watch me do it!
+
+  ![](assets/images/test.gif)
+
+
+
+
     
   # Usage:
     ${header.usage}

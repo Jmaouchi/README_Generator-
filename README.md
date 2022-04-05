@@ -55,7 +55,16 @@ SOFTWARE.
     
 
   # Instalation:
-    To instal this application, you need to instal node.js and then,  you need to clone the repo to your local machine, then open repo with command line, you need to do npm init and npm instal inquirer inside your terminal. after that you need to do node app.js and start answering to the prompt quastions... done.    
+    To instal this application, you need to instal node.js and then,  you need to clone the repo to your local machine, then open repo with command line, you need to do npm init and npm instal inquirer inside your terminal. after that you need to do node app.js and start answering to the prompt quastions... done.     
+
+  
+  
+  # Watch me do it!
+
+  ![](assets/images/test.gif)
+
+
+
 
     
   # Usage:
