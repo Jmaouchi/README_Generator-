@@ -7,14 +7,16 @@ const printRequiredData = dataset => {
   //Destructured the data that we got back from the prompt
     const {title, about, languages, license, ...header} = dataset; 
     console.log(`data is: ${JSON.stringify(dataset)}\n`);
-  return `
-  # Title: ${title}
   
+  // return a template that will hold the data 
+  return `${getBadge(license)}
   
-  ${readAboutLicense(license)}
 
-  
-  ${getBadge(license)}
+
+
+  # Title: ${title}
+
+
 
   # Table of  Contents
 
@@ -60,116 +62,60 @@ const printRequiredData = dataset => {
     ${header.contribution}
 `}
 
-// Set a function that will hold a callback just in case a license is added from the user, and add a link to see the license policy
-const readAboutLicense = licenseName => {
-  const MIT = 'MIT'
-  const ISC = 'ISC'  
-  const GPL = 'GPL'
-  const AL = 'AL'
-  const noLicense = 'N/A'
 
-  const licenses = [MIT, ISC, GPL, AL, noLicense]
-  for (let i = 0; i< licenses.length; i++){
-    console.log('license length is ', licenses[i]); 
-
-    // if there is no license added from the user, return an empty string
-    if(!licenseName){  
-    return ` `
-
-     // if a license is added from the user, return data
-    }else{
-      // if the license is MIT then print this
-      if(licenseName === MIT){
-
-  return `
-  # license used:  ${licenseName}
-
-
-
-  ## Read about ${licenseName} license here: 'https://choosealicense.com/licenses/mit/'
-  
-  `  
-
-    // if the license is ISC then print this
-    }else if(licenseName === ISC){
-  return `
-  # license used:  ${licenseName}
-
-
-
-  ## Read about ${licenseName} license here:  'https://choosealicense.com/licenses/ISC/'
-  `  
-  
-    // if the license is GPL then print this
-    }else if(licenseName === GPL){
-    return `
-  # license used: 
-  
-  ## ${licenseName}
-
-
-  ## Read about ${licenseName} license here:  'https://choosealicense.com/licenses/gpl-3.0/'
-
-  `   
-
-    // if the license is AL then print this
-    }else if(licenseName === AL){
-    return `
-  # license used: 
-  
-  ## ${licenseName}
-
-
-  ## Read about ${licenseName} license here:  'https://choosealicense.com/licenses/apache-2.0/'
-  
-  `   
-
-  }else if(licenseName === noLicense){
-    return `  
-  `   
-  }
-
-  }
-} 
-}
-
-
-// function that will allow the user to get the license badge
+// A function that will allow the user to get the license and the license badge
 const getBadge = (userLicenseUsed) => {
-  // If a user choose a license then check which license he choose
-  if(userLicenseUsed){
-    // If a user choose the MIT license then print the name and the badge of the MIT license 
+
+    // If a user choose the MIT license then print the license name / the license badge / a link to that license 
     if(userLicenseUsed === 'MIT'){
     return `
-  # License Badge: 
+  # license used:  ${userLicenseUsed}  [![License](https://img.shields.io/apm/l/npm)](https://choosealicense.com/licenses/mit/)
+
+
+  ## Read about ${userLicenseUsed} license here:  'https://choosealicense.com/licenses/mit/'
+
+
     ${mitBadge}
+
     `
-    // If a user choose the ISC license then print the name and the badge of the ISC license 
+
+    // If a user choose the ISC license then print the license name / the license badge / a link to that license
     }else if(userLicenseUsed === 'ISC'){
       return `
-  # License Badge: 
+  # license used:  ${userLicenseUsed}  [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
+  ## Read about ${userLicenseUsed} license here:  'https://choosealicense.com/licenses/ISC/'
+
       ${icsbadge}
     `
-    // If a user choose the AGL license then print the name and the badge of the AGL license 
-    }else if(userLicenseUsed === 'AGL'){
+    // If a user choose the AGL license then print the license name / the license badge / a link to that license 
+    }else if(userLicenseUsed === 'GPL'){
       console.log(agplbadge);
       return `
-  # License Badge: 
+  # license used:  ${userLicenseUsed}  [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)  
+      
+  ## Read about ${userLicenseUsed} license here: https://choosealicense.com/licenses/gpl-3.0/
+
+
       ${agplbadge}
     `
-    // If a user choose the AL license then print the name and the badge of the AL license 
+    // If a user choose the AL license then print the license name / the license badge / a link to that license
     }else if(userLicenseUsed === 'AL'){
       return `
-  # License Badge: 
+  # license used: Apache-2.0   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  
+  ## Read about Apache-2.0  license here:
+
+
       ${Albadge}
     `
     // If a user did not choose license then dont print anything 
     }else if(userLicenseUsed === 'N/A'){
+    
       return `
       `
     }
   
-  }
 }
 
 // export the modlule 
