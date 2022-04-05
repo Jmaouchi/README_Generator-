@@ -1,7 +1,9 @@
 
-  # License Badge:
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0),
+  # license used:  AL  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
   
+  ## Read about AL license here:
+
+
       Apache License
 Version 2.0, January 2004
 http://www.apache.org/licenses/
@@ -205,21 +207,11 @@ See the License for the specific language governing permissions and
 limitations under the License. 
     
   
-  
-  
-  
-  # license used: 
-  
-  ## AL
 
-
-  ## Read about AL license here:  'https://choosealicense.com/licenses/apache-2.0/'
-  
-  
   
 
 
-  # Title: as
+  # Title: asd
 
 
 
@@ -237,7 +229,7 @@ limitations under the License.
 
 
   # About The Application:
-    asd
+    as
     
 
   # Built With:
@@ -245,11 +237,11 @@ limitations under the License.
     
 
   # Instalation:
-    asd 
+    daa 
 
     
   # Usage:
-    asd
+    sd
   
 
 

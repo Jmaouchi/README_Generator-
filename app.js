@@ -79,7 +79,7 @@ const promptUserWithQuestions = () =>{
       type: 'list',
       name: 'license',
       message: 'What license that is used for this application? (Required)',
-      choices: ['MIT', 'ISC', 'AGL','AL', 'N/A'],
+      choices: ['MIT', 'ISC', 'GPL','AL', 'N/A'],
     },
     {
       type: 'type',
