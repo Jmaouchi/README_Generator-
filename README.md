@@ -29,7 +29,7 @@ SOFTWARE.
 
 
 
-  # Title: asd
+  # Title: sd
 
 
 
@@ -47,7 +47,7 @@ SOFTWARE.
 
 
   # About The Application:
-    as
+    ad
     
 
   # Built With:
@@ -55,30 +55,30 @@ SOFTWARE.
     
 
   # Instalation:
-    sd 
+    d 
 
   
   
   # Watch me do it!
-    ![](Sample/sample.mp4)
+    ![](../Sample/sample.mp4)
 
 
 
     
   # Usage:
-    asd
+    ad
   
 
 
   ## Link:  
-   asd
+   da
   
 
 
   # Contact:
-  as
+  ds
 
 
 
   # Contribution:
-    dasd
+    ad
