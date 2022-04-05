@@ -42,6 +42,13 @@ const printRequiredData = dataset => {
   # Instalation:
     ${header.instal} 
 
+  
+  
+  # Watch me do it!
+    ![](assets/sample.mp4)
+
+
+
     
   # Usage:
     ${header.usage}
