@@ -29,7 +29,7 @@ SOFTWARE.
 
 
 
-  # Title: asd
+  # Title: git as
 
 
 
@@ -47,7 +47,7 @@ SOFTWARE.
 
 
   # About The Application:
-    asd
+    da
     
 
   # Built With:
@@ -55,7 +55,7 @@ SOFTWARE.
     
 
   # Instalation:
-    dasd 
+    sd 
 
   
   
@@ -67,12 +67,12 @@ SOFTWARE.
 
     
   # Usage:
-    as
+    asd
   
 
 
   ## Link:  
-   ads
+   asd
   
 
 
@@ -82,4 +82,4 @@ SOFTWARE.
 
 
   # Contribution:
-    as
+    ads
