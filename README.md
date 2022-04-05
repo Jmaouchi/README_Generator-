@@ -1,7 +1,11 @@
 
   # Title: Readme_Generator
   
-  [![alt-text](https://img.shields.io/apm/l/npm)](https://github.com/Jmaouchi/README_Generator-)
+  [![License](https://img.shields.io/apm/l/npm)](https://choosealicense.com/licenses/mit/),
+  [![License](https://img.shields.io/aur/license/node)](https://github.com/Jmaouchi/README_Generator-),
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
+
   
   # license used:  MIT
 
