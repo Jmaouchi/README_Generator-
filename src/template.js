@@ -141,7 +141,9 @@ const getBadge = (userLicenseUsed) => {
     // If a user choose the MIT license then print the name and the badge of the MIT license 
     if(userLicenseUsed === 'MIT'){
     return `
-  # License Badge: 
+  # License Badge:  
+  [![License](https://img.shields.io/apm/l/npm)](https://choosealicense.com/licenses/mit/)
+
     ${mitBadge}
     `
     // If a user choose the ISC license then print the name and the badge of the ISC license 

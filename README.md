@@ -1,11 +1,7 @@
 
-  # Title: Readme_Generator
+  # Title: asd
   
-  [![License](https://img.shields.io/apm/l/npm)](https://choosealicense.com/licenses/mit/),
-  [![License](https://img.shields.io/aur/license/node)](https://github.com/Jmaouchi/README_Generator-),
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
-
+  
   
   # license used:  MIT
 
@@ -17,7 +13,9 @@
 
   
   
-  # License Badge: 
+  # License Badge:  
+  [![License](https://img.shields.io/apm/l/npm)](https://choosealicense.com/licenses/mit/)
+
     Copyright (c) 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -52,31 +50,31 @@ SOFTWARE.
 
 
   # About The Application:
-    Whatever you want to add as a description for your app
+    asd
     
 
   # Built With:
-    JavaScript, Node.js
+    HTML, CSS, JavaScript, JQuery, Bootstrap, Node.js
     
 
   # Instalation:
-    explain how to instal it  
+    asd 
 
     
   # Usage:
-    ajsdkjha
+    as
   
 
 
   ## Link:  
-   https://github.com/Jmaouchi/jest-another-RPG
+   ad
   
 
 
   # Contact:
-  djigo.maouchi@gmail.com
+  asd
 
 
 
   # Contribution:
-    Made by Jugurta Maouchi
+    asd
