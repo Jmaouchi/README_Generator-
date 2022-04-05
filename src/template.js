@@ -45,7 +45,7 @@ const printRequiredData = dataset => {
   
   
   # Watch me do it!
-    ![](../Sample/test.gif)
+    ![](sample/test.gif)
 
 
 

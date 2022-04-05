@@ -55,12 +55,12 @@ SOFTWARE.
     
 
   # Instalation:
-    a 
+    da 
 
   
   
   # Watch me do it!
-    ![](../Sample/test.gif)
+    ![](sample/test.gif)
 
 
 
@@ -71,12 +71,12 @@ SOFTWARE.
 
 
   ## Link:  
-   asd
+   da
   
 
 
   # Contact:
-  asd
+  sd
 
 
 
