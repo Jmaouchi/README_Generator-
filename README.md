@@ -47,7 +47,7 @@ SOFTWARE.
 
 
   # About The Application:
-    asd
+    as
     
 
   # Built With:
@@ -55,18 +55,18 @@ SOFTWARE.
     
 
   # Instalation:
-    da 
+    sd 
 
   
   
   # Watch me do it!
-    ![](assets/sample.mp4)
+    ![](Sample/sample.mp4)
 
 
 
     
   # Usage:
-    sda
+    asd
   
 
 
@@ -76,9 +76,9 @@ SOFTWARE.
 
 
   # Contact:
-  asd
+  as
 
 
 
   # Contribution:
-    asd
+    dasd
