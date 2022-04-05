@@ -1,7 +1,7 @@
 
   # Title: Readme_Generator
   
-  
+  [![alt-text](https://img.shields.io/apm/l/npm)](https://github.com/Jmaouchi/README_Generator-)
   
   # license used:  MIT
 
@@ -48,7 +48,7 @@ SOFTWARE.
 
 
   # About The Application:
-    This application will allow you to create a README.md file, with only answering to a prompt quastions
+    Whatever you want to add as a description for your app
     
 
   # Built With:
@@ -56,23 +56,23 @@ SOFTWARE.
     
 
   # Instalation:
-    To instal this application, you need to instal node.js and then,  you need to clone the repo to your local machine, then open repo with command line, you need to do npm init and npm instal inquirer inside your terminal. after that you need to do node app.js and start answering to the prompt quastions... done.  
+    explain how to instal it  
 
     
   # Usage:
-    The main usage is to create your readme file, without missing any steps or informations. 
+    ajsdkjha
   
 
 
   ## Link:  
-   https://github.com/Jmaouchi/README_Generator-/tree/main
+   https://github.com/Jmaouchi/jest-another-RPG
   
 
 
   # Contact:
-  djigo.maouchi@yahoo.com
+  djigo.maouchi@gmail.com
 
 
 
   # Contribution:
-    Built by Jugurta Maouchi   ©️2022 Readme_Generator, Inc
+    Made by Jugurta Maouchi
