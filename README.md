@@ -19,7 +19,7 @@
 
 
 # About The Application:
-  This application will allow you to create a README.md file, with only answering to a prompt quastions\
+  This application will allow you to create a README.md file, with only answering to a prompt questions
 
 
 # Built With:
